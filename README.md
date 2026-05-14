@@ -14,6 +14,20 @@ AI-assisted Figma work can move fast, but fast edits are only useful when the fi
 - run layout QA after Figma writes so clipped text, overflow, and weak auto-layout are caught before handoff
 - preserve useful routing, evaluation, and failure notes as the workflow evolves
 
+## How It Works
+
+Figma Plus is organized as a small skill system rather than a single large prompt. The main `figma-plus` skill acts as the router: it classifies the Figma task, chooses the right governance or QA subskill, and defines what evidence should be checked before the work is reported as done.
+
+The implementation follows a repeatable loop:
+
+1. Classify the task as structure, design, systemization, component governance, or QA.
+2. Inspect the Figma file, page, node, component set, or screenshot evidence before changing anything.
+3. Route focused work to a smaller skill, such as file governance, component integrity, resize contracts, or layout QA.
+4. Use scripts in `skills/*/scripts/` for structured audits when the Figma Plugin API can provide stronger evidence than manual inspection.
+5. Record durable routing cases, output checks, and known failures in `evals/` so the workflow improves over time.
+
+This keeps the system easier to maintain: broad workflow decisions live in `figma-plus`, while specialized rules and audit scripts stay close to the skill that owns them.
+
 ## What Is Included
 
 | Skill | Purpose |
