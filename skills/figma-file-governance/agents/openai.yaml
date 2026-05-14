@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma File Governance"
+  short_description: "Audit and organize Figma file structure"
+  default_prompt: "Use $figma-file-governance to audit a Figma file structure and propose a cleanup plan."

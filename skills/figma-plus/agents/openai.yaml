@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Plus"
+  short_description: "Reusable Figma workflow and QA companion"
+  default_prompt: "Use $figma-plus to plan, create, update, and QA a reusable Figma workflow."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Component Resize Contracts"
+  short_description: "Audit Figma component resize behavior"
+  default_prompt: "Use $figma-component-resize-contracts to audit whether Figma components can resize safely."

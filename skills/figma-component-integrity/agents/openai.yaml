@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Component Integrity"
+  short_description: "Check real component links and variants"
+  default_prompt: "Use $figma-component-integrity to audit whether Figma components are truly linked and variant-ready."

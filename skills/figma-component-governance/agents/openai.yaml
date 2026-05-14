@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Component Governance"
+  short_description: "Govern Figma component assets over time"
+  default_prompt: "Use $figma-component-governance to plan component governance and route component integrity checks."

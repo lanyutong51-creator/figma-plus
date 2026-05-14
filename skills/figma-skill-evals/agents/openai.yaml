@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Skill Evals"
+  short_description: "Evaluate Figma skill routing and health"
+  default_prompt: "Use $figma-skill-evals to check Figma skill routing, health, and regression notes."

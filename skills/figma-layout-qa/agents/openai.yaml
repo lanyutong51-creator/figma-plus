@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Layout QA"
+  short_description: "Audit Figma layout failures."
+  default_prompt: "Audit the selected Figma frame for clipped text, overflow, invisible nodes, and layout sizing issues, then report actionable fixes."
